@@ -1,0 +1,48 @@
+@font-face {
+    font-family: pp mori;
+    src: url("ppmori.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: pp mori;
+    
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+body{
+    position: relative;
+    background-color: black;
+}
+
+.content h1, .content h2{
+    font-family: 'pp mori';
+}
+
+.elem img{
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+.elem h1{
+    transition: all ease-out  0.5s;
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: blue;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+
+}
+.loading span{
+    display: inline-block;
+}
+
+
